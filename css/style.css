@@ -24,6 +24,7 @@ a{
 
 /*----------------GRIDS---------------*/
 .bodyHome{
+    position: absolute;
     background: 
     linear-gradient(
         to top,
@@ -36,7 +37,6 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
-
     display: grid; 
     height: 100vh;
     grid-auto-columns: 1fr; 
@@ -51,6 +51,7 @@ a{
 }
 
 .bodyCoberturas{
+    position: absolute;
     background: 
     linear-gradient(
         to top,
@@ -76,6 +77,7 @@ a{
     justify-items: stretch; 
 }
 .bodyCompanias{
+    position: absolute;
     background: 
     linear-gradient(
         to top,
@@ -101,6 +103,7 @@ a{
     justify-items: stretch; 
 }
 .bodyNosotros{
+    position: absolute;
     background: 
     linear-gradient(
         to top,
@@ -127,6 +130,7 @@ a{
 
 }
 .bodyContacto{
+    position: absolute;
     background: 
     linear-gradient(
         to top,
