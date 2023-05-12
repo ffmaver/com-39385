@@ -7,77 +7,85 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="bodyContacto">
-    <header>
-        <nav >
-            <a href="../index.html">
-                <img src="../assets/img/logo1.png" alt="logo">
-            </a>
-            <ul class="navbar">
-                
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./coberturas.html">Coberturas</a></li>
-                <li><a href="./companias.html">Compañías</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="#" class="active">Contacto</a></li>
-            </ul>
-        </nav>
-
-    </header>
-    <main>
-        <section class="formulario">
-        <div>
-            <h1 class="tituloContacto">Envianos tu <br> consulta</h1>
+<body>
+    <div class="bodyContacto">
+        <div class="gridHead1">
+            <header>
+                <section class="navBar">
+                    <div class="logo">
+                    <a href="../index.html"><img src="../assets/img/logo_largo_lmb.png" alt="logo lorena martin" class="logoImg"></a>
+                    </div>
+                    <nav>
+                    <ul class="navbar">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./coberturas.html">Coberturas</a></li>
+                        <li><a href="./companias.html">Compañías</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="#" class="active">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </header>
+            <hr>
         </div>
-        <!-- aca no me quedo claro si cada label deberia ser un div -->
-        <div class="rectangulo">
-            <h3>Los campos que contienen (*) son obligatorios</h3>
-            <form action="" method="post">
-                <fieldset class="forms">
-                    <label for="nombre">
-                        <span>Nombre</span>
-                    <input class="texto" type="text" id="nombre">
-                    </label>
-                    <label for="mail">
-                        <span>Mail</span>
-                    <input type="text" id="mail">
-                    </label>
-                    <label for="telefono">
-                        <span>Telefono</span>
-                    <input type="text" id="telefono">
-                    </label>
-                    <label for="cotizacion">
-                        <span>¿Que necesitas cotizar?</span>
-                    <input type="text" id="cotizacion">
-                    </label>
-                    <label for="mensaje">
-                        <span>Mensaje...</span>
-                    <input type="text" id="mensaje">
-                    </label>
-                </fieldset>
-                <input type="submit">
-                
-            </form>
+        <div class="gridMain2">
+            <main>
+                <section class="formulario">
+                    <div>
+                        <h1 class="tituloContacto">Envianos tu <br> consulta</h1>
+                    </div>
+                    <!-- aca no me quedo claro si cada label deberia ser un div -->
+                    <div class="rectangulo">
+                        <h3>Los campos que contienen (*) son obligatorios</h3>
+                        <form action="" method="post">
+                            <fieldset class="forms">
+                                <label for="nombre">
+                                    <span></span>
+                                <input class="texto" type="text" id="nombre" placeholder="Nombre*">
+                                </label>
+                                <label for="mail">
+                                    <span></span>
+                                <input type="text" id="mail" placeholder="Mail*">
+                                </label>
+                                <label for="telefono">
+                                    <span></span>
+                                <input type="text" id="telefono" placeholder="Telefono*">
+                                </label>
+                                <label for="cotizacion">
+                                    <span></span>
+                                <input type="text" id="cotizacion" placeholder="¿Que necesitas cotizar?*">
+                                </label>
+                                <label for="mensaje">
+                                    <span></span>
+                                <input type="text" id="mensaje" placeholder="Mensaje...">
+                                </label>
+                            </fieldset>
+                            <input type="submit" class="enviar">
+                            
+                        </form>
+                    </div>
+                    </section>
+            </main>
         </div>
-        </section>
-
-    </main>
-    <footer class="footerr">
-        <section>
-            <div class="foot">
-                <img class="imagenMail" src="../assets/img/correo.png" alt="logo de mail">
-                <a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe" target="_blank" class="mensaje"> 
-                    
-                    <p>lore@lorenamartin.com.ar</p>
-                </a>
-            </div>
-            <div class="foot">
-                <img class="imagenFono" src="../assets/img/celular.png" alt="celular logo">
-                <a href="https://www.whatsapp.com/?lang=es" target="_blank" class="celular" >
-                    <p>11-5010-0436</p>
-                </a>
-            </div>
-        </section>
-    </footer>
+        <div class="gridFoot3">
+            <footer class="backFooter">
+                <section class="footer">
+                    <div class="foot">
+                        <img class="imagenMail" src="../assets/img/correo.png" alt="logo de mail">
+                        <a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe" target="_blank" class="mensaje"> 
+                            
+                            <p>lore@lorenamartin.com.ar</p>
+                        </a>
+                    </div>
+                    <div class="foot">
+                        <img class="imagenFono" src="../assets/img/celular.png" alt="celular logo">
+                        <a href="https://wa.me/1150100455?" target="_blank" class="celular" >
+                            <p>11-5010-0436</p>
+                        </a>
+                    </div>
+                </section> 
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
