@@ -24,7 +24,21 @@ a{
 
 /*----------------GRIDS---------------*/
 .bodyHome{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.6fr 2.2fr 0.02fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"; 
+    justify-items: stretch; 
+}
+/* .mainHome{
     position: absolute;
+    height: 100%;
+    width: 100%;
     background: 
     linear-gradient(
         to top,
@@ -37,21 +51,12 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
-    display: grid; 
-    height: 100vh;
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.6fr 2.2fr 0.02fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer"; 
-    justify-items: stretch; 
-}
+} */
 
 .bodyCoberturas{
     position: absolute;
+    height: 100%;
+    width: 100%;
     background: 
     linear-gradient(
         to top,
@@ -65,7 +70,7 @@ a{
     background-repeat: no-repeat;
     background-position: center; 
     display: grid; 
-    height: 100vh;
+    
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
     grid-template-rows: 0.6fr 2.2fr 0.02fr; 
@@ -78,6 +83,8 @@ a{
 }
 .bodyCompanias{
     position: absolute;
+    height: 100%;
+    width: 100%;
     background: 
     linear-gradient(
         to top,
@@ -91,7 +98,6 @@ a{
     background-repeat: no-repeat;
     background-position: center; 
     display: grid; 
-    height: 100vh;
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
     grid-template-rows: 0.6fr 2.2fr 0.02fr; 
@@ -104,6 +110,8 @@ a{
 }
 .bodyNosotros{
     position: absolute;
+    height: 100%;
+    width: 100%;
     background: 
     linear-gradient(
         to top,
@@ -117,7 +125,6 @@ a{
     background-repeat: no-repeat;
     background-position: center; 
     display: grid; 
-    height: 100vh;
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
     grid-template-rows: 0.6fr 2.2fr 0.02fr; 
@@ -131,6 +138,8 @@ a{
 }
 .bodyContacto{
     position: absolute;
+    height: 100%;
+    width: 100%;
     background: 
     linear-gradient(
         to top,
@@ -144,7 +153,6 @@ a{
     background-repeat: no-repeat;
     background-position: center; 
     display: grid; 
-    height: 100vh;
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr; 
     grid-template-rows: 0.6fr 2.2fr 0.02fr; 
@@ -162,13 +170,12 @@ a{
 
 /*----------HEADER-NAVBAR----------*/
 header{
-    /* background-color:rgb(12, 48, 66); */
     background: 
     linear-gradient(
         to top,
-        rgba(13, 10, 56, 0),
+        rgba(4, 36, 78, 0.527),
         rgba(12, 48, 66, 0.795),
-        rgba(12, 48, 66, 0.911),
+        rgba(12, 48, 66, 0.89),
         rgba(12, 48, 66, 0.959)
     );
     width: 100%;
@@ -176,15 +183,20 @@ header{
     height: 130px;
     flex-direction: row;
     justify-content: space-between;
+    background-attachment: fixed;
+}
+nav{
+    align-self: center;
 }
 .navbar{
     font-size:large;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 20px;
-    justify-content:space-evenly; /*movimiento en eje x*/
-    padding-top: 30px;
+    gap: 10px;
+    align-content: center;
+    /* justify-content:space-evenly; movimiento en eje x, aling mov en y */
+    /* padding-top: 30px; */
 }
 .navbar li a{
     padding: 0px 20px;
@@ -196,12 +208,27 @@ header{
 .navBar{
     display: flex;
     flex-direction: row;
-    gap:250px;
+    justify-content: space-between;
 } 
 
+
 /*------------MAIN-HOME-----------------*/
-.mainHome{
-    height: 450px;
+.backHome{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: 
+    linear-gradient(
+        to top,
+        rgba(24, 82, 80, 0.582),
+        rgba(12, 70, 68, 0.582),
+        rgba(12, 54, 53, 0.473),
+        rgba(4, 63, 73, 0.418)
+    ),
+    url(../assets/img/backHome.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
 }
 .tituloHome{
     text-align: center;
@@ -266,7 +293,6 @@ header{
     flex-wrap: nowrap;
     gap: 20px;
     justify-content:space-evenly;
-
 }
 .tituloContacto{
     text-align:left;
@@ -288,7 +314,6 @@ header{
 .forms label{
     margin: 5px;
 }
-
 input{
     background-color: rgb(194, 207, 207);
     border-radius: 4px;
@@ -296,7 +321,6 @@ input{
     height: 25px;
     width: 500px;
     color: black;
-
 }
 .rectangulo{
     height: 300px;
@@ -309,10 +333,6 @@ input{
     margin-top: 90px;
 }
 
-
-
-
-
 /*------------FOOTERS-----------------*/
 .backFooter{
     display: flex;
@@ -321,13 +341,14 @@ input{
     height: 60px;
     width: 100%;
     background-color:rgb(12, 48, 66, 1);
+    position: fixed;
+    bottom: 0;
 }
 .footer{
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
-
 }
 .foot{
     display: flex;
@@ -423,7 +444,7 @@ input{
 }
 @media (max-width:768px){
     header{
-        flex-direction: column;
+        flex-flow: column;
         align-items: center;
     }
 }
