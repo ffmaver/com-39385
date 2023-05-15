@@ -413,9 +413,25 @@ input{
     .bodyHome{
         width: fit-content;
     }
+    .companiasImg{
+        padding-top: 50px;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .companiasImg li img{
+        max-width: 150px;
+    }
 }
 
 @media (max-width:768px){
+    .bodyCoberturas{
+        width: fit-content;
+    }
+    .companiasImg{
+        flex-direction: column;
+        align-self: center;
+        justify-content:space-evenly;
+    }
     .tituloHome{
         font-size: 30px;
         padding-top: 110px;
@@ -461,6 +477,12 @@ input{
         padding-top: 25px;
         margin: 0px 120px;
     }
+    .companiasImg li img{
+        max-width: 100px;
+    }
+    .tituloCoberturas{
+        font-size: 20px;
+    }
     .backFooter{
         flex-direction: column;
     }
@@ -482,4 +504,5 @@ input{
         padding-top: 25px;
         margin: 0px 120px;
     }
+ 
 }
