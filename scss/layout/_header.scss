@@ -1,29 +1,17 @@
 header{
-    background: 
-    linear-gradient(
-        to top,
-        rgba(4, 36, 78, 0.527),
-        rgba(12, 48, 66, 0.795),
-        rgba(12, 48, 66, 0.89),
-        rgba(12, 48, 66, 0.959)
-    );
+    background: $gradiente-header;
     width: 100%;
-    display: flex;
     height: 130px;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex(row, space-between);
     background-attachment: fixed;
     .navBar{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flex(row, space-between);
         nav{
             align-self: center;
             .navbar{
                 list-style-type: none;
                 font-size:large;
-                display: flex;
-                flex-direction: row;
+                @include flex(row, none);
                 flex-wrap: nowrap;
                 gap: 10px;
                 align-content: center;
@@ -31,7 +19,10 @@ header{
                     a{
                         padding: 0px 20px;
                         text-decoration: none;
-                        color: white;
+                        &:hover{
+                            filter: drop-shadow(0px 0px 3px rgb(107, 177, 218));
+                            transition: 0.5s;
+                        }
                     }
                 }
             }
