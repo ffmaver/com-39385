@@ -1,3 +1,38 @@
 header{
-   
+    background: 
+    linear-gradient(
+        to top,
+        rgba(4, 36, 78, 0.527),
+        rgba(12, 48, 66, 0.795),
+        rgba(12, 48, 66, 0.89),
+        rgba(12, 48, 66, 0.959)
+    );
+    width: 100%;
+    display: flex;
+    height: 130px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-attachment: fixed;
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        nav{
+            align-self: center;
+            .navbar{
+                font-size:large;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                gap: 10px;
+                align-content: center;
+                li{
+                    a{
+                        padding: 0px 20px;
+                    }
+                }
+            }
+        }
+    
+    }
 }
