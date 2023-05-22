@@ -13,6 +13,7 @@ header {
     header .navBar nav {
       align-self: center; }
       header .navBar nav .navbar {
+        list-style-type: none;
         font-size: large;
         display: flex;
         flex-direction: row;
@@ -20,4 +21,28 @@ header {
         gap: 10px;
         align-content: center; }
         header .navBar nav .navbar li a {
-          padding: 0px 20px; }
+          padding: 0px 20px;
+          text-decoration: none;
+          color: white; }
+
+.backFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  height: 60px;
+  width: 100%;
+  background-color: #0c3042;
+  position: fixed;
+  bottom: 0; }
+  .backFooter .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center; }
+    .backFooter .footer .foot {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      gap: 10px;
+      padding-right: 20px;
+      align-self: center; }

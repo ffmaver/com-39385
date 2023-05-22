@@ -20,6 +20,7 @@ header{
         nav{
             align-self: center;
             .navbar{
+                list-style-type: none;
                 font-size:large;
                 display: flex;
                 flex-direction: row;
@@ -29,6 +30,8 @@ header{
                 li{
                     a{
                         padding: 0px 20px;
+                        text-decoration: none;
+                        color: white;
                     }
                 }
             }
