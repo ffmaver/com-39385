@@ -21,19 +21,7 @@ a{
 .bodyHome{
     display: grid; 
     grid-template-rows: 0.6fr 2.2fr 60px; 
-    background: 
-    linear-gradient(
-        to top,
-        rgba(24, 82, 80, 0.582),
-        rgba(12, 70, 68, 0.582),
-        rgba(12, 54, 53, 0.473),
-        rgba(4, 63, 73, 0.418)
-    ),
-    url(../assets/img/backHome.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-attachment: fixed;
+    height: 100vh;
 }
 
 .bodyCoberturas{
@@ -163,7 +151,7 @@ header{
     );
     width: 100%;
     display: flex;
-    height: 130px;
+    height: 15vh;
     flex-direction: row;
     justify-content: space-between;
     background-attachment: fixed;
@@ -199,6 +187,19 @@ nav{
 .mainHome{
     width: 100%;
     height: 100%;
+    background: 
+    linear-gradient(
+        to top,
+        rgba(24, 82, 80, 0.582),
+        rgba(12, 70, 68, 0.582),
+        rgba(12, 54, 53, 0.473),
+        rgba(4, 63, 73, 0.418)
+    ),
+    url(../assets/img/backHome.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-attachment: fixed;
 
 }
 .tituloHome{
@@ -249,6 +250,12 @@ nav{
     font-weight:bold;
     align-self: center;
     padding-top: 50px;
+}
+.coberturasImg{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content:space-evenly;
 }
 /*------------MAIN--COMPANIAS-----------------*/
 .companiasImg{

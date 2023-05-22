@@ -1,0 +1,50 @@
+.bodyNosotros{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(12, 48, 66);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid; 
+    grid-template-rows: 0.6fr 2.2fr 60px; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"; 
+    justify-items: stretch; 
+        .mainNos{
+            text-align: center;
+            font-size: 40px;
+            font-weight:bold;
+            align-self: center;
+            padding-top: 30px;
+        }
+        .infoNosotros{
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            padding: 50px 0px;
+            font-size: 22px;
+            .circulo{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background: rgba(4, 42, 68, 0);
+                border: solid 3px white;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin:0px auto;
+                padding:3%;
+                overflow:hidden;
+                transition: 0.5s ease;
+                &:hover{
+            transform: scale(1.12);
+                }
+            }
+        }
+}

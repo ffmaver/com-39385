@@ -1,8 +1,10 @@
+/*-----UTILITIES-----*/
 @import"./utilities/variables";
-
+@import"./utilities/mixins";
+/*--------BASE-------*/
 @import"./base/reset";
 @import"./base/typo";
-
+/*--------PAGES------*/
 @import"./layout/header";
 @import"./layout/main-home";
 @import"./layout/main-coberturas";

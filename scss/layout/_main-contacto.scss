@@ -1,0 +1,62 @@
+.bodyContacto{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(12, 48, 66);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.6fr 2.2fr 0.02fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"; 
+    justify-items: stretch; 
+    .formulario{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 20px;
+        justify-content:space-evenly;
+        .tituloContacto{
+            text-align:left;
+            font-size: 40px;
+            font-weight:bold;
+            align-self: center;
+            margin-top: 70px;
+        }
+        .rectangulo{
+            height: 300px;
+            width: 600px;
+            float: right;
+            padding:2%;
+            background: linear-gradient(180deg, rgba(62, 127, 159, 0.89) 0%, #0C3144 100%);
+            border-radius: 17px;
+            overflow:hidden;
+            margin-top: 90px;
+            .forms{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                height: 200px;
+                margin-top: 10px;
+                overflow:hidden;
+                border: none;
+                label{
+                    margin: 5px;
+                    input{
+                        background-color: rgb(194, 207, 207);
+                        border-radius: 4px;
+                        border: 1px solid rgb(68, 65, 65);
+                        height: 25px;
+                        width: 500px;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

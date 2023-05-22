@@ -1,7 +1,7 @@
 header{
     background: $gradiente-header;
     width: 100%;
-    height: 130px;
+    height: 15vh;
     @include flex(row, space-between);
     background-attachment: fixed;
     .navBar{

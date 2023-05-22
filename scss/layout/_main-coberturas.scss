@@ -1,0 +1,39 @@
+.bodyCoberturas{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(11, 64, 90);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.6fr 2.2fr 0.02fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"; 
+    justify-items: stretch; 
+    .tituloCoberturas{
+        text-align: center;
+        font-size: 40px;
+        font-weight:bold;
+        align-self: center;
+        padding-top: 50px;
+    }
+    .coberturasImg{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-content:space-evenly;
+        padding-top: 80px;
+        transition: all 2s linear;
+        li img:hover{
+            transform: scale(1.12);
+        }
+    }
+    
+}
