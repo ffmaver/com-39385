@@ -218,8 +218,10 @@ header {
             border-radius: 4px;
             border: 1px solid #444141;
             height: 25px;
-            width: 500px;
-            color: black; }
+            width: 500px; }
+      .bodyContacto .formulario .rectangulo input {
+        color: black;
+        /*QUIERO PONER EL ENVIAR EN COLOR NEGRO PERO NOSE COMO ACCCEDER AL BOTON*/ }
 
 .backFooter {
   display: flex;

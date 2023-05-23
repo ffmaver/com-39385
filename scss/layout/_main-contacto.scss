@@ -52,10 +52,12 @@
                         border-radius: 4px;
                         border: 1px solid rgb(68, 65, 65);
                         height: 25px;
-                        width: 500px;
-                        color: black;
+                        width: 500px;                        
                     }
                 }
+            }
+            input{
+                color: black; /*QUIERO PONER EL ENVIAR EN COLOR NEGRO PERO NOSE COMO ACCCEDER AL BOTON*/
             }
         }
     }

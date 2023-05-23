@@ -1,0 +1,14 @@
+@media(max-width:1047px){
+    .bodyHome{
+        width: fit-content;
+    }
+    .companiasImg{
+        padding-top: 50px;
+        justify-content:space-evenly;
+        align-items: center;
+        li img{
+        max-width: 150px;
+        }
+    }
+
+}

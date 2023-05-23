@@ -1,0 +1,19 @@
+@media (max-width:768px){
+    .bodyCoberturas{
+        width: fit-content;
+    }
+    .companiasImg{
+        flex-direction: column;
+        align-self: center;
+        justify-content:space-evenly;
+    }
+    .tituloHome{
+        font-size: 30px;
+        padding-top: 110px;
+    }
+    .subtituloHome{
+        font-size: 20px;
+        padding-top: 50px;
+        margin-bottom: 200px;
+    }
+}

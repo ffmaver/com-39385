@@ -1,0 +1,52 @@
+@media (max-width:425px){
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .navBar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .logoImg{
+                max-width: 150px;
+            }
+            .navbar{
+                font-size: 10px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                text-align: center;
+            }
+        }
+    }
+    
+    .bodyHome{
+        width: fit-content;
+        .tituloHome{
+            font-size: 20px;
+            padding-top: 110px;
+        }
+        .subtituloHome{
+            font-size: 15px;
+            padding-top: 25px;
+            margin: 0px 120px;
+        }
+    }
+    .companiasImg li img{
+        max-width: 100px;
+    }
+    .tituloCoberturas{
+        font-size: 20px;
+    }
+    .backFooter{
+        flex-direction: column;
+        .footer{
+        flex-direction: column;
+        justify-content: center;
+            .foot a {
+                font-size: 10px;
+            }
+        }
+    }
+}
