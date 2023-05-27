@@ -2,19 +2,10 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgb(12, 48, 66);
+    @include background(url(../../assets/img/backCompanias.jpeg));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 0.6fr 2.2fr 0.02fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer"; 
     justify-items: stretch; 
     .tituloCoberturas{
         text-align: center;
@@ -30,5 +21,8 @@
         align-self: center;
         justify-content:space-evenly;
         padding-top: 130px;
+        li img:hover{
+            transform: scale(1.12);
+        }
     }
 }

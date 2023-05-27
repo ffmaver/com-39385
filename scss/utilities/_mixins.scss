@@ -3,3 +3,12 @@
     flex-direction: $direction;
     justify-content: $justify-x;
 }
+@mixin background($imagen){
+    background-image: linear-gradient(
+        to top,
+        rgba(24, 82, 80, 0.582),
+        rgba(12, 70, 68, 0.582),
+        rgba(12, 54, 53, 0.473),
+        rgba(4, 63, 73, 0.418)
+    ), $imagen;
+}

@@ -17,67 +17,54 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-attachment: fixed; }
-  header .navBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    header .navBar nav {
-      align-self: center; }
-      header .navBar nav .navbar {
-        list-style-type: none;
-        font-size: large;
-        display: flex;
-        flex-direction: row;
-        justify-content: none;
-        flex-wrap: nowrap;
-        gap: 10px;
-        align-content: center; }
-        header .navBar nav .navbar li a {
-          padding: 0px 20px;
-          text-decoration: none; }
-          header .navBar nav .navbar li a:hover {
-            filter: drop-shadow(0px 0px 3px #6bb1da);
-            transition: 0.5s; }
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  header nav {
+    align-self: center; }
+    header nav .navbar {
+      list-style-type: none;
+      font-size: large;
+      display: flex;
+      flex-direction: row;
+      justify-content: none;
+      flex-wrap: nowrap;
+      gap: 10px;
+      align-content: center; }
+      header nav .navbar li a {
+        padding: 0px 20px;
+        text-decoration: none; }
+        header nav .navbar li a:hover {
+          filter: drop-shadow(0px 0px 3px #6bb1da);
+          transition: 0.5s; }
 
-.bodyHome {
-  display: grid;
-  grid-template-rows: 0.6fr 2.2fr 60px;
-  height: 100vh; }
-  .bodyHome .mainHome {
-    grid-row: 2 / 3;
-    width: 100%;
-    height: 70vh;
-    background-color: #0c3042;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; }
-    .bodyHome .mainHome .tituloHome {
-      text-align: center;
-      font-size: 50px;
-      font-weight: bold;
-      padding-top: 110px; }
-    .bodyHome .mainHome .subtituloHome {
-      text-align: center;
-      font-size: 22px;
-      font: weight 50px;
-      padding-top: 50px; }
+.bodyHome main {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, rgba(24, 82, 80, 0.582), rgba(12, 70, 68, 0.582), rgba(12, 54, 53, 0.473), rgba(4, 63, 73, 0.418)), url(../../assets/img/backHome.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  .bodyHome main .tituloHome {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 110px; }
+  .bodyHome main .subtituloHome {
+    text-align: center;
+    font-size: 22px;
+    font: weight 50px;
+    padding-top: 50px; }
 
 .bodyCoberturas {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #0b405a;
+  background-image: linear-gradient(to top, rgba(24, 82, 80, 0.582), rgba(12, 70, 68, 0.582), rgba(12, 54, 53, 0.473), rgba(4, 63, 73, 0.418)), url(../../assets/img/backCoberturas.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.6fr 2.2fr 0.02fr;
-  gap: 0px 0px;
-  grid-template-areas: "header" "main" "footer";
   justify-items: stretch; }
   .bodyCoberturas .tituloCoberturas {
     text-align: center;
@@ -94,22 +81,16 @@ header {
     padding-top: 80px;
     transition: all 2s linear; }
     .bodyCoberturas .coberturasImg li img:hover {
-      transform: scale(1.12); }
+      transform: scale(0.9); }
 
 .bodyCompanias {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #0c3042;
+  background-image: linear-gradient(to top, rgba(24, 82, 80, 0.582), rgba(12, 70, 68, 0.582), rgba(12, 54, 53, 0.473), rgba(4, 63, 73, 0.418)), url(../../assets/img/backCompanias.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.6fr 2.2fr 0.02fr;
-  gap: 0px 0px;
-  grid-template-areas: "header" "main" "footer";
   justify-items: stretch; }
   .bodyCompanias .tituloCoberturas {
     text-align: center;
@@ -124,35 +105,31 @@ header {
     align-self: center;
     justify-content: space-evenly;
     padding-top: 130px; }
+    .bodyCompanias .companiasImg li img:hover {
+      transform: scale(1.12); }
 
 .bodyNosotros {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #0c3042;
+  background-image: linear-gradient(to top, rgba(24, 82, 80, 0.582), rgba(12, 70, 68, 0.582), rgba(12, 54, 53, 0.473), rgba(4, 63, 73, 0.418)), url(../../assets/img/backCompanias.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: grid;
-  grid-template-rows: 0.6fr 2.2fr 60px;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "header" "main" "footer";
   justify-items: stretch; }
-  .bodyNosotros .mainNos {
+  .bodyNosotros main .mainNos {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
     align-self: center;
     padding-top: 30px; }
-  .bodyNosotros .infoNosotros {
+  .bodyNosotros main .infoNosotros {
     display: flex;
     flex-direction: row;
     align-self: center;
     padding: 50px 0px;
     font-size: 22px; }
-    .bodyNosotros .infoNosotros .circulo {
+    .bodyNosotros main .infoNosotros .circulo {
       width: 200px;
       height: 200px;
       border-radius: 50%;
@@ -165,36 +142,30 @@ header {
       padding: 3%;
       overflow: hidden;
       transition: 0.5s ease; }
-      .bodyNosotros .infoNosotros .circulo:hover {
+      .bodyNosotros main .infoNosotros .circulo:hover {
         transform: scale(1.12); }
 
 .bodyContacto {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #0c3042;
+  background-image: linear-gradient(to top, rgba(24, 82, 80, 0.582), rgba(12, 70, 68, 0.582), rgba(12, 54, 53, 0.473), rgba(4, 63, 73, 0.418)), url(../../assets/img/backCompanias.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.6fr 2.2fr 0.02fr;
-  gap: 0px 0px;
-  grid-template-areas: "header" "main" "footer";
   justify-items: stretch; }
-  .bodyContacto .formulario {
+  .bodyContacto main {
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
     justify-content: space-evenly; }
-    .bodyContacto .formulario .tituloContacto {
+    .bodyContacto main .tituloContacto {
       text-align: left;
       font-size: 40px;
       font-weight: bold;
       align-self: center;
       margin-top: 70px; }
-    .bodyContacto .formulario .rectangulo {
+    .bodyContacto main .rectangulo {
       height: 300px;
       width: 600px;
       float: right;
@@ -203,7 +174,7 @@ header {
       border-radius: 17px;
       overflow: hidden;
       margin-top: 90px; }
-      .bodyContacto .formulario .rectangulo .forms {
+      .bodyContacto main .rectangulo .forms {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -211,19 +182,21 @@ header {
         margin-top: 10px;
         overflow: hidden;
         border: none; }
-        .bodyContacto .formulario .rectangulo .forms label {
+        .bodyContacto main .rectangulo .forms label {
           margin: 5px; }
-          .bodyContacto .formulario .rectangulo .forms label input {
+          .bodyContacto main .rectangulo .forms label input {
             background-color: #c2cfcf;
             border-radius: 4px;
             border: 1px solid #444141;
             height: 25px;
             width: 500px; }
-      .bodyContacto .formulario .rectangulo input {
-        color: black;
-        /*QUIERO PONER EL ENVIAR EN COLOR NEGRO PERO NOSE COMO ACCCEDER AL BOTON*/ }
+      .bodyContacto main .rectangulo form input {
+        /*BOTON*/
+        width: 60px;
+        height: 25px;
+        color: #555252; }
 
-.backFooter {
+footer {
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -232,21 +205,96 @@ header {
   background-color: #0c3042;
   position: fixed;
   bottom: 0; }
-  .backFooter .footer {
+  footer .footer {
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center; }
-    .backFooter .footer .foot {
+    footer .footer .foot {
       display: flex;
       flex-direction: row;
       justify-content: end;
       gap: 10px;
       padding-right: 20px;
       align-self: center; }
-      .backFooter .footer .foot a {
+      footer .footer .foot a {
         padding: 0px 20px;
         text-decoration: none; }
-        .backFooter .footer .foot a:hover {
+        footer .footer .foot a:hover {
           filter: drop-shadow(0px 0px 3px #6bb1da);
           transition: 0.5s; }
+
+@media (max-width: 1047px) {
+  .bodyHome {
+    width: fit-content; }
+  .companiasImg {
+    padding-top: 50px;
+    justify-content: space-evenly;
+    align-items: center; }
+    .companiasImg li img {
+      max-width: 150px; } }
+
+@media (max-width: 768px) {
+  .bodyCoberturas {
+    width: fit-content; }
+  .companiasImg {
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-evenly; }
+  .tituloHome {
+    font-size: 30px;
+    padding-top: 110px; }
+  .subtituloHome {
+    font-size: 20px;
+    padding-top: 50px;
+    margin-bottom: 200px; } }
+
+@media (max-width: 425px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+    header .navBar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      header .navBar .logoImg {
+        max-width: 150px; }
+      header .navBar .navbar {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center; }
+  .bodyHome {
+    width: fit-content; }
+    .bodyHome .tituloHome {
+      font-size: 20px;
+      padding-top: 110px; }
+    .bodyHome .subtituloHome {
+      font-size: 15px;
+      padding-top: 25px;
+      margin: 0px 120px; }
+  .tituloCoberturas {
+    font-size: 20px; }
+  .coberturasImg li img {
+    max-width: 100px; }
+  .companiasImg li img {
+    max-width: 100px; }
+  .backFooter {
+    flex-direction: column; }
+    .backFooter .footer {
+      flex-direction: column;
+      justify-content: center; }
+      .backFooter .footer .foot a {
+        font-size: 10px; } }
+
+@media (max-width: 320px) {
+  .tituloHome {
+    font-size: 20px;
+    padding-top: 110px; }
+  .subtituloHome {
+    font-size: 10px;
+    padding-top: 25px;
+    margin: 0px 120px; } }
