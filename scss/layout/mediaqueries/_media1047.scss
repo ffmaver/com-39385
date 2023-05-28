@@ -1,14 +1,139 @@
-@media(max-width:1047px){
-    // .bodyHome{
-    //     width: fit-content;
-    // }
-    // .companiasImg{
-    //     padding-top: 50px;
-    //     justify-content:space-evenly;
-    //     align-items: center;
-    //     li img{
-    //     max-width: 150px;
-    //     }
-    // }
+@media(max-width:1047px) {
+	header {
+		@include flex(column, center);
+		height: 100%;
+		align-items: center;
 
+		.logoImg {
+			max-width: 350px;
+		}
+
+		nav .navbar {
+			align-items: center;
+			font-size: 25px;
+			@include flex(row, none);
+			margin: 20px;
+		}
+	}
+
+	main {
+		.bodyHome {
+			.tituloHome {
+				font-size: 50px;
+				padding-top: 200px;
+			}
+
+			.subtituloHome {
+				font-size: 25px;
+				padding-top: 25px;
+			}
+		}
+	}
+
+	.bodyCoberturas {
+		.tituloCoberturas {
+			font-size: 50px;
+		}
+
+		.coberturasImg {
+			@include flex(column, center);
+			align-items: center;
+			padding-top: 40px;
+
+			li img {
+				max-width: 300px;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.bodyCompanias {
+		.tituloCoberturas {
+			font-size: 45px;
+		}
+
+		.companiasImg {
+			@include flex(column, center);
+			align-items: center;
+			padding-top: 40px;
+
+			li img {
+				max-width: 260px;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.bodyNosotros {
+		main {
+			.mainNos {
+				font-size: 40px;
+				margin-top: 15px;
+			}
+
+			.infoNosotros {
+				@include flex(column, center);
+				font-size: 30px;
+				padding: 5%;
+
+				.circulo {
+					width: 220px;
+					height: 220px;
+					margin: 10px auto;
+				}
+			}
+		}
+	}
+
+	.bodyContacto {
+		main {
+			.rectangulo {
+				height: 460px;
+				width: 600px;
+				text-align: center;
+				font-size: large;
+
+				.forms {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: nowrap;
+					height: 350px;
+					margin-top: 10px;
+					overflow: hidden;
+					border: none;
+
+					label {
+						margin: 7px;
+
+						input {
+							height: 50px;
+							width: 550px;
+						}
+					}
+				}
+
+				form input {
+					width: 100px;
+					height: 30px;
+				}
+			}
+		}
+
+	}
+
+	footer {
+		@include flex(row, end);
+
+		.footer {
+			@include flex(row, end);
+
+			.foot {
+				font-size: 22px;
+
+				a {
+					padding: 0px;
+				}
+			}
+		}
+	}
 }
