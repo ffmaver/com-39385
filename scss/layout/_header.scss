@@ -4,7 +4,6 @@ header{
     height: 15vh;
     @include flex(row, space-between);
     background-attachment: fixed;
-        @include flex(row, space-between);
         nav{
             align-self: center;
             .navbar{

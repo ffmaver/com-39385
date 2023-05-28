@@ -17,10 +17,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+  background-attachment: fixed; }
   header nav {
     align-self: center; }
     header nav .navbar {
@@ -39,19 +36,18 @@ header {
           filter: drop-shadow(0px 0px 3px #6bb1da);
           transition: 0.5s; }
 
-.bodyHome main {
+main .bodyHome {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(to top, rgba(24, 82, 80, 0.582), rgba(12, 70, 68, 0.582), rgba(12, 54, 53, 0.473), rgba(4, 63, 73, 0.418)), url(../../assets/img/backHome.jpeg);
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed; }
-  .bodyHome main .tituloHome {
+  background-position: center; }
+  main .bodyHome .tituloHome {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
     padding-top: 110px; }
-  .bodyHome main .subtituloHome {
+  main .bodyHome .subtituloHome {
     text-align: center;
     font-size: 22px;
     font: weight 50px;
@@ -224,77 +220,136 @@ footer {
           filter: drop-shadow(0px 0px 3px #6bb1da);
           transition: 0.5s; }
 
-@media (max-width: 1047px) {
-  .bodyHome {
-    width: fit-content; }
-  .companiasImg {
-    padding-top: 50px;
-    justify-content: space-evenly;
-    align-items: center; }
-    .companiasImg li img {
-      max-width: 150px; } }
-
 @media (max-width: 768px) {
-  .bodyCoberturas {
-    width: fit-content; }
-  .companiasImg {
-    flex-direction: column;
-    align-self: center;
-    justify-content: space-evenly; }
-  .tituloHome {
-    font-size: 30px;
-    padding-top: 110px; }
-  .subtituloHome {
-    font-size: 20px;
-    padding-top: 50px;
-    margin-bottom: 200px; } }
-
-@media (max-width: 425px) {
   header {
     display: flex;
     flex-direction: column;
-    height: 100%; }
-    header .navBar {
+    justify-content: center;
+    height: 100%;
+    align-items: center; }
+    header .logoImg {
+      max-width: 300px; }
+    header nav .navbar {
+      align-items: center;
+      font-size: 20px;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      header .navBar .logoImg {
-        max-width: 150px; }
-      header .navBar .navbar {
-        font-size: 10px;
+      flex-direction: row;
+      justify-content: none;
+      margin: 20px; } }
+
+@media (max-width: 425px) {
+  header .logoImg {
+    max-width: 150px; }
+  header nav .navbar {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    margin-bottom: 10px; }
+  main .bodyHome .tituloHome {
+    font-size: 25px;
+    padding-top: 110px; }
+  main .bodyHome .subtituloHome {
+    font-size: 18px;
+    padding-top: 25px; }
+  .bodyCoberturas .tituloCoberturas {
+    font-size: 25px; }
+  .bodyCoberturas .coberturasImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px; }
+    .bodyCoberturas .coberturasImg li img {
+      max-width: 130px;
+      margin-top: 10px; }
+  .bodyCompanias .tituloCoberturas {
+    font-size: 25px; }
+  .bodyCompanias .companiasImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px; }
+    .bodyCompanias .companiasImg li img {
+      max-width: 160px;
+      margin-top: 10px; }
+  .bodyNosotros main .mainNos {
+    font-size: 20px;
+    margin-top: 10px; }
+  .bodyNosotros main .infoNosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    padding: 5%; }
+    .bodyNosotros main .infoNosotros .circulo {
+      width: 140px;
+      height: 140px;
+      margin: 10px auto; }
+  .bodyContacto main {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    justify-content: space-evenly; }
+    .bodyContacto main .tituloContacto {
+      text-align: center;
+      font-size: 30px;
+      margin: 30px 20px; }
+    .bodyContacto main .rectangulo {
+      height: 350px;
+      width: 300px;
+      margin-top: 0px;
+      font-size: smaller;
+      text-align: center;
+      margin: 0 auto; }
+      .bodyContacto main .rectangulo .forms {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        text-align: center; }
-  .bodyHome {
-    width: fit-content; }
-    .bodyHome .tituloHome {
-      font-size: 20px;
-      padding-top: 110px; }
-    .bodyHome .subtituloHome {
-      font-size: 15px;
-      padding-top: 25px;
-      margin: 0px 120px; }
-  .tituloCoberturas {
-    font-size: 20px; }
-  .coberturasImg li img {
-    max-width: 100px; }
-  .companiasImg li img {
-    max-width: 100px; }
-  .backFooter {
-    flex-direction: column; }
-    .backFooter .footer {
+        height: 230px;
+        margin-top: 10px;
+        overflow: visible;
+        border: none; }
+        .bodyContacto main .rectangulo .forms label {
+          margin: 7px; }
+          .bodyContacto main .rectangulo .forms label input {
+            height: 30px;
+            width: 250px; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    footer .footer {
+      display: flex;
       flex-direction: column;
       justify-content: center; }
-      .backFooter .footer .foot a {
-        font-size: 10px; } }
+      footer .footer .foot {
+        font-size: 10px; }
+        footer .footer .foot a {
+          padding: 0px; } }
 
 @media (max-width: 320px) {
-  .tituloHome {
-    font-size: 20px;
-    padding-top: 110px; }
-  .subtituloHome {
-    font-size: 10px;
-    padding-top: 25px;
-    margin: 0px 120px; } }
+  .bodyCoberturas .coberturasImg li img {
+    max-width: 100px; }
+  .bodyCompanias .tituloCoberturas {
+    font-size: 20px; }
+  .bodyCompanias .companiasImg li img {
+    max-width: 130px; }
+  .bodyNosotros main .infoNosotros {
+    font-size: 15px; }
+    .bodyNosotros main .infoNosotros .circulo {
+      width: 100px;
+      height: 100px; }
+  .bodyContacto main .tituloContacto {
+    font-size: 20px; }
+  .bodyContacto main .rectangulo {
+    height: 300px;
+    width: 200px; }
+    .bodyContacto main .rectangulo .forms {
+      height: 180px; }
+      .bodyContacto main .rectangulo .forms label {
+        margin: 5px; }
+        .bodyContacto main .rectangulo .forms label input {
+          height: 25px;
+          width: 180px; } }

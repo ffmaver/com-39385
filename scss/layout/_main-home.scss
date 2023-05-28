@@ -1,12 +1,10 @@
-.bodyHome{
-    // height: 100vh;
-    main{
-        width: 100%;
+main{
+    .bodyHome{
+            width: 100%;
         height: 100vh;
         @include background(url(../../assets/img/backHome.jpeg));
         background-size: cover;
         background-position: center; 
-        background-attachment: fixed;
         .tituloHome{
             text-align: center;
             font-size: 50px;
@@ -16,9 +14,9 @@
         .subtituloHome{
             text-align: center;
             font-size: 22px;
-            font: weight 50px;;
+            font: weight 50px;
             padding-top: 50px;
         }
     }
-
-}
+    
+    }

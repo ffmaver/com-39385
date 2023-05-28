@@ -1,11 +1,54 @@
-@media (max-width:320px){
-    .tituloHome{
+@media (max-width:320px) {
+  .bodyCoberturas {
+    .coberturasImg {
+      li img {
+        max-width: 100px;
+      }
+    }
+  }
+
+  .bodyCompanias {
+    .tituloCoberturas {
+      font-size: 20px;
+    }
+    .companiasImg {
+      li img {
+        max-width: 130px;
+      }
+    }
+  }
+
+  .bodyNosotros {
+    main {
+      .infoNosotros {
+        font-size: 15px;
+        .circulo {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+  .bodyContacto {
+    main {
+      .tituloContacto {
         font-size: 20px;
-        padding-top: 110px;
-    }
-    .subtituloHome{
-        font-size: 10px;
-        padding-top: 25px;
-        margin: 0px 120px;
-    }
+      }
+      .rectangulo {
+        height: 300px;
+        width: 200px;
+        .forms {
+          height: 180px;
+          label {
+            margin: 5px;
+            input {
+              height: 25px;
+              width: 180px;
+            }
+          }
+        }
+      
+  }
+}
+}
 }
