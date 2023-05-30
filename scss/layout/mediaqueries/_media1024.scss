@@ -1,11 +1,13 @@
 @media(max-width:1024px) {
-	.bodyCoberturas {
+	header {
+		.logoImg {
+			margin-top: 10px;
+		}
+	}
+
+	.bodyCompanias {
 		height: fit-content;
 	}
-	.bodyCompanias {
-		height:fit-content;
-	}
-	.bodyNosotros{
-		height:fit-content;
-	}
+
+
 }

@@ -24,6 +24,7 @@
     }
   }
 	.bodyCompanias {
+    height: 100vh;
     .tituloCoberturas {
       font-size: 40px;
     }
@@ -34,6 +35,7 @@
     }
   }
   .bodyNosotros {
+    height: 100vh;
     main {
       .mainNos {
         padding: 20px 10px;
@@ -41,6 +43,7 @@
     }
   }
 	.bodyContacto {
+      height: 100vh;
     main {
       @include flex(column, none);
       justify-content: space-evenly;

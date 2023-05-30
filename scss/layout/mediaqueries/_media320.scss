@@ -20,11 +20,15 @@
 
   .bodyNosotros {
     main {
+      .mainNos{
+        padding: 30px 5px;
+      }
       .infoNosotros {
-        font-size: 15px;
+        font-size: 12px;
         .circulo {
           width: 100px;
           height: 100px;
+          margin-bottom: 40px;
         }
       }
     }

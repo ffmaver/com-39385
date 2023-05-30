@@ -4,6 +4,12 @@ header{
     height: 15vh;
     @include flex(row, space-between);
     background-attachment: fixed;
+    border-bottom: solid 1px white;
+    .logoImg{
+        margin: 3.5px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
         nav{
             align-self: center;
             .navbar{
