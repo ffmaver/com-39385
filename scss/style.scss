@@ -1,10 +1,10 @@
-/*-----UTILITIES-----*/
+//-----UTILITIES-----
 @import"./utilities/variables";
 @import"./utilities/mixins";
-/*--------BASE-------*/
+//--------BASE-------
 @import"./base/reset";
 @import"./base/typo";
-/*--------PAGES------*/
+//--------PAGES------
 @import"./layout/header";
 @import"./layout/main-home";
 @import"./layout/main-coberturas";
@@ -12,8 +12,9 @@
 @import"./layout/main-nosotros";
 @import"./layout/main-contacto";
 @import"./layout/footer";
-
+//--------MEDIAQ----------
 @import"./layout/mediaqueries/media1047";
+@import"./layout/mediaqueries/media1024";
 @import"./layout/mediaqueries/media768";
 @import"./layout/mediaqueries/media425";
 @import"./layout/mediaqueries/media320";

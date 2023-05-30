@@ -30,6 +30,7 @@
     }
   }
   .bodyContacto {
+    height:100vh;
     main {
       .tituloContacto {
         font-size: 20px;
@@ -38,7 +39,7 @@
         height: 300px;
         width: 200px;
         .forms {
-          height: 180px;
+          height: 143px;
           label {
             margin: 5px;
             input {

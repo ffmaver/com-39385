@@ -1,5 +1,3 @@
-/*-----UTILITIES-----*/
-/*--------BASE-------*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 * {
   /*reset*/
@@ -9,7 +7,6 @@
   color: white;
   font-family: "Open Sans", sans-serif; }
 
-/*--------PAGES------*/
 header {
   background: linear-gradient(to top, rgba(4, 36, 78, 0.527), rgba(12, 48, 66, 0.795), rgba(12, 48, 66, 0.89), rgba(12, 48, 66, 0.959));
   width: 100%;
@@ -38,7 +35,7 @@ header {
 
 main .bodyHome {
   width: 100%;
-  height: 100vh;
+  height: 76vh;
   background-image: linear-gradient(to top, rgba(24, 82, 80, 0.582), rgba(12, 70, 68, 0.582), rgba(12, 54, 53, 0.473), rgba(4, 63, 73, 0.418)), url(../../assets/img/backHome.jpeg);
   background-size: cover;
   background-position: center; }
@@ -54,14 +51,12 @@ main .bodyHome {
     padding-top: 50px; }
 
 .bodyCoberturas {
-  position: absolute;
-  height: 100%;
+  height: 76vh;
   width: 100%;
   background-image: linear-gradient(to top, rgba(24, 82, 80, 0.582), rgba(12, 70, 68, 0.582), rgba(12, 54, 53, 0.473), rgba(4, 63, 73, 0.418)), url(../../assets/img/backCoberturas.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  justify-items: stretch; }
+  background-position: center; }
   .bodyCoberturas .tituloCoberturas {
     text-align: center;
     font-size: 40px;
@@ -74,20 +69,17 @@ main .bodyHome {
     flex-direction: row;
     align-self: center;
     justify-content: space-evenly;
-    padding-top: 80px;
-    transition: all 2s linear; }
+    padding: 80px 0px; }
     .bodyCoberturas .coberturasImg li img:hover {
       transform: scale(0.9); }
 
 .bodyCompanias {
-  position: absolute;
-  height: 100%;
+  height: 76vh;
   width: 100%;
   background-image: linear-gradient(to top, rgba(24, 82, 80, 0.582), rgba(12, 70, 68, 0.582), rgba(12, 54, 53, 0.473), rgba(4, 63, 73, 0.418)), url(../../assets/img/backCompanias.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  justify-items: stretch; }
+  background-position: center; }
   .bodyCompanias .tituloCoberturas {
     text-align: center;
     font-size: 40px;
@@ -100,19 +92,17 @@ main .bodyHome {
     flex-direction: row;
     align-self: center;
     justify-content: space-evenly;
-    padding-top: 130px; }
+    padding: 80px 0px; }
     .bodyCompanias .companiasImg li img:hover {
       transform: scale(1.12); }
 
 .bodyNosotros {
-  position: absolute;
-  height: 100%;
+  height: 76vh;
   width: 100%;
   background-image: linear-gradient(to top, rgba(24, 82, 80, 0.582), rgba(12, 70, 68, 0.582), rgba(12, 54, 53, 0.473), rgba(4, 63, 73, 0.418)), url(../../assets/img/backCompanias.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  justify-items: stretch; }
+  background-position: center; }
   .bodyNosotros main .mainNos {
     text-align: center;
     font-size: 40px;
@@ -130,20 +120,18 @@ main .bodyHome {
       height: 200px;
       border-radius: 50%;
       background: rgba(4, 42, 68, 0);
-      border: solid 3px white;
+      border: solid 3px #188BC6;
       justify-content: center;
       align-items: center;
       text-align: center;
       margin: 0px auto;
       padding: 3%;
-      overflow: hidden;
-      transition: 0.5s ease; }
+      overflow: hidden; }
       .bodyNosotros main .infoNosotros .circulo:hover {
         transform: scale(1.12); }
 
 .bodyContacto {
-  position: absolute;
-  height: 100%;
+  height: 76vh;
   width: 100%;
   background-image: linear-gradient(to top, rgba(24, 82, 80, 0.582), rgba(12, 70, 68, 0.582), rgba(12, 54, 53, 0.473), rgba(4, 63, 73, 0.418)), url(../../assets/img/backCompanias.jpeg);
   background-size: cover;
@@ -193,14 +181,13 @@ main .bodyHome {
         color: #555252; }
 
 footer {
+  bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: end;
   height: 60px;
   width: 100%;
-  background-color: #0c3042;
-  position: fixed;
-  bottom: 0; }
+  background-color: #0c3042; }
   footer .footer {
     display: flex;
     flex-direction: row;
@@ -311,11 +298,21 @@ footer {
         footer .footer .foot a {
           padding: 0px; } }
 
+@media (max-width: 1024px) {
+  .bodyCoberturas {
+    height: fit-content; }
+  .bodyCompanias {
+    height: fit-content; }
+  .bodyNosotros {
+    height: fit-content; } }
+
 @media (max-width: 768px) {
   header nav .navbar {
     font-size: 20px; }
   header .logoImg {
     max-width: 300px; }
+  main .bodyHome {
+    height: 100vh; }
   .bodyCoberturas .tituloCoberturas {
     font-size: 40px; }
   .bodyCoberturas .coberturasImg li img {
@@ -324,6 +321,8 @@ footer {
     font-size: 40px; }
   .bodyCompanias .companiasImg li img {
     max-width: 220px; }
+  .bodyNosotros main .mainNos {
+    padding: 20px 10px; }
   .bodyContacto main {
     display: flex;
     flex-direction: column;
@@ -336,7 +335,6 @@ footer {
     .bodyContacto main .rectangulo {
       height: 400px;
       width: 450px;
-      margin-top: 0px;
       font-size: medium;
       margin: 0 auto; }
       .bodyContacto main .rectangulo .forms {
@@ -362,9 +360,9 @@ footer {
     font-size: 25px; }
   main .bodyHome .subtituloHome {
     font-size: 18px; }
-  .bodyCoberturas .tituloCoberturas {
+  body .bodyCoberturas .tituloCoberturas {
     font-size: 25px; }
-  .bodyCoberturas .coberturasImg li img {
+  body .bodyCoberturas .coberturasImg li img {
     max-width: 130px; }
   .bodyCompanias .tituloCoberturas {
     font-size: 25px; }
@@ -383,9 +381,11 @@ footer {
     height: 350px;
     width: 300px;
     font-size: smaller; }
-    .bodyContacto main .rectangulo .forms label input {
-      height: 30px;
-      width: 250px; }
+    .bodyContacto main .rectangulo .forms {
+      height: 200px; }
+      .bodyContacto main .rectangulo .forms label input {
+        height: 30px;
+        width: 250px; }
   footer {
     display: flex;
     flex-direction: column;
@@ -409,15 +409,17 @@ footer {
     .bodyNosotros main .infoNosotros .circulo {
       width: 100px;
       height: 100px; }
-  .bodyContacto main .tituloContacto {
-    font-size: 20px; }
-  .bodyContacto main .rectangulo {
-    height: 300px;
-    width: 200px; }
-    .bodyContacto main .rectangulo .forms {
-      height: 180px; }
-      .bodyContacto main .rectangulo .forms label {
-        margin: 5px; }
-        .bodyContacto main .rectangulo .forms label input {
-          height: 25px;
-          width: 180px; } }
+  .bodyContacto {
+    height: 100vh; }
+    .bodyContacto main .tituloContacto {
+      font-size: 20px; }
+    .bodyContacto main .rectangulo {
+      height: 300px;
+      width: 200px; }
+      .bodyContacto main .rectangulo .forms {
+        height: 143px; }
+        .bodyContacto main .rectangulo .forms label {
+          margin: 5px; }
+          .bodyContacto main .rectangulo .forms label input {
+            height: 25px;
+            width: 180px; } }

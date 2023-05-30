@@ -19,16 +19,19 @@
       }
     }
   }
-  .bodyCoberturas {
-    .tituloCoberturas {
-      font-size: 25px;
-    }
-    .coberturasImg {
-      li img {
-        max-width: 130px;
+  body{
+    .bodyCoberturas {
+      .tituloCoberturas {
+        font-size: 25px;
+      }
+      .coberturasImg {
+        li img {
+          max-width: 130px;
+        }
       }
     }
   }
+  
   .bodyCompanias {
     .tituloCoberturas {
       font-size: 25px;
@@ -62,10 +65,13 @@
         height: 350px;
         width: 300px;
         font-size: smaller;
-        .forms label input {
+        .forms {
+          height: 200px;
+          label input {
               height: 30px;
               width: 250px;
         }
+      }
   }
 }
 }

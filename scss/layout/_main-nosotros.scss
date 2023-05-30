@@ -1,12 +1,11 @@
 .bodyNosotros{
-    position: absolute;
-    height: 100%;
+    //position: absolute;
+    height: 76vh;
     width: 100%;
     @include background(url(../../assets/img/backCompanias.jpeg));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    justify-items: stretch; 
     main{
         .mainNos{
             text-align: center;
@@ -26,14 +25,13 @@
                 height: 200px;
                 border-radius: 50%;
                 background: rgba(4, 42, 68, 0);
-                border: solid 3px white;
+                border: solid 3px #188BC6;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
                 margin:0px auto;
                 padding:3%;
                 overflow:hidden;
-                transition: 0.5s ease;
                 &:hover{
                     transform: scale(1.12);
                 }

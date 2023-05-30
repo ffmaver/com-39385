@@ -1,12 +1,11 @@
 .bodyCompanias{
-    position: absolute;
-    height: 100%;
+    //position: absolute;
+    height: 76vh;
     width: 100%;
     @include background(url(../../assets/img/backCompanias.jpeg));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; 
-    justify-items: stretch; 
     .tituloCoberturas{
         text-align: center;
         font-size: 40px;
@@ -20,7 +19,7 @@
         flex-direction: row;
         align-self: center;
         justify-content:space-evenly;
-        padding-top: 130px;
+        padding: 80px 0px;
         li img:hover{
             transform: scale(1.12);
         }
