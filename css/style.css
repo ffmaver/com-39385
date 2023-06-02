@@ -134,19 +134,19 @@ main .bodyHome {
     align-self: center;
     padding: 60px 0px;
     font-size: 22px; }
-    .bodyNosotros main .infoNosotros .circulo {
+    .bodyNosotros main .infoNosotros .circulo, .bodyNosotros main .infoNosotros .circulo2, .bodyNosotros main .infoNosotros .circulo3 {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      background: rgba(4, 42, 68, 0);
-      border: solid 3px #188BC6;
+      background: rgba(23, 39, 49, 0.61);
+      border: solid 3px #ffffff;
       justify-content: center;
       align-items: center;
       text-align: center;
       margin: 0px auto;
       padding: 3%;
       overflow: hidden; }
-      .bodyNosotros main .infoNosotros .circulo:hover {
+      .bodyNosotros main .infoNosotros .circulo:hover, .bodyNosotros main .infoNosotros .circulo2:hover, .bodyNosotros main .infoNosotros .circulo3:hover {
         transform: scale(1.12); }
 
 .bodyContacto {
@@ -279,7 +279,7 @@ footer {
       justify-content: center;
       font-size: 30px;
       padding: 5%; }
-      .bodyNosotros main .infoNosotros .circulo {
+      .bodyNosotros main .infoNosotros .circulo, .bodyNosotros main .infoNosotros .circulo2, .bodyNosotros main .infoNosotros .circulo3 {
         width: 220px;
         height: 220px;
         margin: 10px auto; }
@@ -397,7 +397,7 @@ footer {
     font-size: 20px; }
   .bodyNosotros main .infoNosotros {
     font-size: 20px; }
-    .bodyNosotros main .infoNosotros .circulo {
+    .bodyNosotros main .infoNosotros .circulo, .bodyNosotros main .infoNosotros .circulo2, .bodyNosotros main .infoNosotros .circulo3 {
       width: 140px;
       height: 140px; }
   .bodyContacto main .tituloContacto {
@@ -437,7 +437,7 @@ footer {
     padding: 30px 5px; }
   .bodyNosotros main .infoNosotros {
     font-size: 12px; }
-    .bodyNosotros main .infoNosotros .circulo {
+    .bodyNosotros main .infoNosotros .circulo, .bodyNosotros main .infoNosotros .circulo2, .bodyNosotros main .infoNosotros .circulo3 {
       width: 100px;
       height: 100px;
       margin-bottom: 40px; }

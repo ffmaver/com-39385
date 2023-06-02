@@ -1,41 +1,51 @@
-.bodyNosotros{
-    //position: absolute;
-    height: 76vh;
-    width: 100%;
-    @include background(url(../../assets/img/backCompanias.jpeg));
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    main{
-        .mainNos{
-            text-align: center;
-            font-size: 40px;
-            font-weight:bold;
-            align-self: center;
-            padding-top: 50px;
-        }
-        .infoNosotros{
-            display: flex;
-            flex-direction: row;
-            align-self: center;
-            padding: 60px 0px;
-            font-size: 22px;
-            .circulo{
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-                background: rgba(4, 42, 68, 0);
-                border: solid 3px #188BC6;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                margin:0px auto;
-                padding:3%;
-                overflow:hidden;
-                &:hover{
-                    transform: scale(1.12);
-                }
-            }
-        }
-    }
+.bodyNosotros {
+	//position: absolute;
+	height: 76vh;
+	width: 100%;
+	@include background(url(../../assets/img/backCompanias.jpeg));
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	main {
+		.mainNos {
+			text-align: center;
+			font-size: 40px;
+			font-weight: bold;
+			align-self: center;
+			padding-top: 50px;
+		}
+
+		.infoNosotros {
+			display: flex;
+			flex-direction: row;
+			align-self: center;
+			padding: 60px 0px;
+			font-size: 22px;
+
+			.circulo {
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				background: rgba(23, 39, 49, 0.61);
+				border: solid 3px #ffffff;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				margin: 0px auto;
+				padding: 3%;
+				overflow: hidden;
+				&:hover {
+					transform: scale(1.12);
+				}
+			}
+			.circulo2{
+				@extend .circulo;
+			}
+			.circulo3{
+				@extend .circulo;
+			}
+			
+		}
+	}
 }
