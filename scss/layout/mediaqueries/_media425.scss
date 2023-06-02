@@ -3,52 +3,60 @@
     .logoImg {
       max-width: 150px;
     }
+
     nav .navbar {
       font-size: 15px;
       @include flex(column, none);
       margin-bottom: 10px;
     }
   }
+
   main {
     .bodyHome {
       .tituloHome {
         font-size: 25px;
       }
+
       .subtituloHome {
         font-size: 18px;
       }
     }
   }
-  body{
-    .bodyCoberturas {
-      .tituloCoberturas {
-        font-size: 25px;
+
+  .bodyCoberturas {
+    .tituloCoberturas {
+      font-size: 25px;
+    }
+
+    .image-list {
+      .image-container img {
+        max-width: 130px;
       }
-      .coberturasImg {
-        li img {
-          max-width: 130px;
-        }
-      }
+
     }
   }
-  
+
   .bodyCompanias {
     .tituloCoberturas {
       font-size: 25px;
     }
+
     .companiasImg {
       li img {
         max-width: 160px;
       }
     }
   }
+
   .bodyNosotros {
     main {
       .mainNos {
         font-size: 20px;
       }
+
       .infoNosotros {
         font-size: 20px;
+
         .circulo {
           width: 140px;
           height: 140px;
@@ -56,29 +64,36 @@
       }
     }
   }
+
   .bodyContacto {
     main {
       .tituloContacto {
         font-size: 30px;
       }
+
       .rectangulo {
         height: 350px;
         width: 300px;
         font-size: smaller;
+
         .forms {
           height: 200px;
+
           label input {
-              height: 30px;
-              width: 250px;
+            height: 30px;
+            width: 250px;
+          }
         }
       }
+    }
   }
-}
-}
+
   footer {
     @include flex(column, center);
+
     .footer {
       @include flex(column, center);
+
       .foot {
         font-size: 10px;
       }

@@ -1,8 +1,15 @@
 @media (max-width:320px) {
   .bodyCoberturas {
-    .coberturasImg {
-      li img {
+    .image-list {
+      .image-container {
+        img {
         max-width: 100px;
+        padding-bottom: 10px;
+        }
+        .image-text{
+          font-size:x-small;
+          margin-bottom: 7px;
+        }
       }
     }
   }

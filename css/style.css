@@ -68,16 +68,29 @@ main .bodyHome {
     font-weight: bold;
     align-self: center;
     padding-top: 50px; }
-  .bodyCoberturas .coberturasImg {
+  .bodyCoberturas .image-list {
     list-style-type: none;
+    padding: 0;
     display: flex;
     flex-direction: row;
     align-self: center;
     justify-content: space-evenly;
     padding: 80px 0px; }
-    .bodyCoberturas .coberturasImg li img:hover {
-      cursor: pointer;
-      transform: scale(0.9); }
+    .bodyCoberturas .image-list .image-container {
+      position: relative;
+      display: inline-block; }
+      .bodyCoberturas .image-list .image-container .image-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: #fff;
+        padding: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        text-align: center; }
+      .bodyCoberturas .image-list .image-container:hover .image-text {
+        opacity: 1; }
 
 .bodyCompanias {
   height: 76vh;
@@ -239,15 +252,12 @@ footer {
     height: fit-content; }
     .bodyCoberturas .tituloCoberturas {
       font-size: 50px; }
-    .bodyCoberturas .coberturasImg {
+    .bodyCoberturas .image-list {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      padding-top: 40px; }
-      .bodyCoberturas .coberturasImg li img {
-        max-width: 300px;
-        margin-top: 10px; }
+      padding: 30px 0px;
+      align-items: center; }
   .bodyCompanias .tituloCoberturas {
     font-size: 45px; }
   .bodyCompanias .companiasImg {
@@ -322,8 +332,10 @@ footer {
     height: 100vh; }
   .bodyCoberturas .tituloCoberturas {
     font-size: 40px; }
-  .bodyCoberturas .coberturasImg li img {
+  .bodyCoberturas .image-list .image-container img {
     max-width: 150px; }
+  .bodyCoberturas .image-list .image-container .image-text {
+    font-size: medium; }
   .bodyCompanias {
     height: 100vh; }
     .bodyCompanias .tituloCoberturas {
@@ -373,9 +385,9 @@ footer {
     font-size: 25px; }
   main .bodyHome .subtituloHome {
     font-size: 18px; }
-  body .bodyCoberturas .tituloCoberturas {
+  .bodyCoberturas .tituloCoberturas {
     font-size: 25px; }
-  body .bodyCoberturas .coberturasImg li img {
+  .bodyCoberturas .image-list .image-container img {
     max-width: 130px; }
   .bodyCompanias .tituloCoberturas {
     font-size: 25px; }
@@ -411,8 +423,12 @@ footer {
         font-size: 10px; } }
 
 @media (max-width: 320px) {
-  .bodyCoberturas .coberturasImg li img {
-    max-width: 100px; }
+  .bodyCoberturas .image-list .image-container img {
+    max-width: 100px;
+    padding-bottom: 10px; }
+  .bodyCoberturas .image-list .image-container .image-text {
+    font-size: x-small;
+    margin-bottom: 7px; }
   .bodyCompanias .tituloCoberturas {
     font-size: 20px; }
   .bodyCompanias .companiasImg li img {
